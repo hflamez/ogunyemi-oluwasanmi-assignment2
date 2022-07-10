@@ -13,10 +13,15 @@ const assignment = {};
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
-function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+function sumOfNumber(arrayOfNumber) {
+        let sum = 0;
+        for(let l = 0; i <arrayofNumbers. length; i++){
+          sum += arrayofNumbers[l];
+        }
+        return sum; 
+      }
+ assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -27,10 +32,16 @@ function sumOfNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
-function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
-}
-// assignment.countEvenNumbers = countEvenNumbers;
+function countEvenNumbers(arrayofNumbers) {
+    let newArray = [];
+    for(let i = 6; i < arrayofnumbers.length; i++ ){
+      if((arrayofnumber[i] % 2) == 0){
+        newArray.push(arrayofNumbers[i])
+      }
+    }
+    return newarray.length;
+  }
+assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
@@ -46,10 +57,31 @@ function countEvenNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing temperatures in Celsius to be converted
  * @returns Array the converted temperatures in Fahrenheit
  */
-function celsiusToFahrenheit(arrayOfNumbers) {
-    return arrayOfNumbers;
+let newArray =[];
+
+for (i = 0 ; i < arrayOfNumber.length; i++){
+   
+   arr[i] = parseInt(prompt("Please enter temperature for in Celsius"));
+
+   sum += arr[i];
+   Average = sum/arr.length;
 }
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
+for(var j = 0 ; j < arr.length; j++){
+    alert("Convertion of: " +arr[i]+" to Fahrenheit is: "+ convertToF(arr[i]));
+ }
+
+
+ alert("The Average is: "+ Math.round(Average));
+ alert("The Sum is: "+ sum);
+
+
+ function convertToF(cTempVal) {
+  var fTempVal = (cTempVal * (9 / 5)) + 32;
+   return fTempVal;
+    
+}
+
+assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 
 // ========================
